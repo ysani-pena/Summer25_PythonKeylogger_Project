@@ -143,7 +143,6 @@ KEYWORD_MAP= {
     'nudity' : 'nudity',
     'nude' : 'nude',
     'nudes' : 'nudes',
-    'baddie' : 'baddie',
     'xxx' : 'xxx(NSFW)',
 
     #sensitive variations
@@ -180,9 +179,9 @@ CONTEXT_CHARS = 10             # Number of characters before/after to include in
 BUFFER_PERSIST_LIMIT = 30      # How many characters to save to buffer.txt
 pending_chars_needed = 10      # Wait this many characters after a keyword
 
-ALERT_EMAIL = 'fletcherit@fletcheracademy.org'
-SENDER_EMAIL = 'ypena@fletcheracademy.org'
-SENDER_PASSWORD = 'zfme dbpb crhd bjdk'
+ALERT_EMAIL = '[ENTER ALERT EMAIL HERE]'
+SENDER_EMAIL = '[ENTER SENDER EMAIL HERE]'
+SENDER_PASSWORD = '[ENTER SENDER APP PASSWORD (GMAIL)]'
 
 # --- Setup ---
 username = getpass.getuser() #Current Windows user
