@@ -12,7 +12,7 @@ A cross-platform, context-aware keylogger and alerting system for school-wide de
 
 ## 🚀 Features
 
-- **Fuzzy keyword matching** against a customizable variant→canonical map  
+- **Keyword matching** against a customizable variant→canonical map  
 - **Context capture**: configurable characters before & after each flagged term  
 - **Session persistence**: per-user buffer survives logoff/logon, auto-cleared on alert  
 - **Email alerts** via Gmail SMTP (includes user, hostname, timestamp, context)  
