@@ -30,13 +30,11 @@ A cross-platform, context-aware keylogger and alerting system for school-wide de
 
 ---
 
-🔧 Network & Firewall Considerations
- If your organization enforces outbound firewall rules, be sure to allow:
-ICMP (Ping) – for basic connectivity checks (used by your BAT‐wrapper to verify reachability).
-
-HTTPS (TCP 443) – so pip install keyboard in your launch script can successfully reach the PyPI servers.
-
-SMTPS (TCP 465) – so keywatcher_phaseone.py can authenticate and send alert emails via Gmail’s secure SMTP endpoint.
+# 🔧 Network & Firewall Considerations
+- If your organization enforces outbound firewall rules, be sure to allow:
+  - ICMP (Ping) – for basic connectivity checks (used by your BAT‐wrapper to verify reachability).
+  - HTTPS (TCP 443) – so pip install keyboard in your launch script can successfully reach the PyPI servers.
+  - SMTPS (TCP 465) – so keywatcher_phaseone.py can authenticate and send alert emails via Gmail’s secure SMTP endpoint.
 
 ---
 
