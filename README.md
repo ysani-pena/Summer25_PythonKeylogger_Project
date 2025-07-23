@@ -17,16 +17,16 @@ A cross-platform, context-aware keylogger and alerting system for school-wide de
 - **Session persistence**: per-user buffer survives logoff/logon, auto-cleared on alert  
 - **Email alerts** via Gmail SMTP (includes user, hostname, timestamp, context)  
 - **Windows deployment**: GPO startup for `keylogger.py` + logoff sweep via `logoff_checker.py`  
-- **Chromebook coverage**: Manifest V3 Chrome extension, force-installed via Google Admin  
+- **Chromebook coverage**: (CURRENTLY IN DEVELOPMENT, DOCUMENTATION WILL BE UPDATED SOON...)
 - **Privacy-first**: only the small context snippet is stored/emailed, all buffers auto-purged  
 
 ---
 
 ## ⚙️ Requirements
 
-- **Windows clients**: Python 3.9+ installed (bundled with GPO wrapper), network access to SMTP  
-- **Chromebooks**: Chrome 91+ on Managed OU; Google Admin console with Chrome Management license  
-- **Email**: Gmail account with App-Password enabled, or any SMTP-accessible inbox  
+- **Windows clients**: Python 3.13.5+ installed (bundled with GPO wrapper), network access to SMTP  
+- **Chromebooks**: Google Admin console & scripts.google.com (CURRENTLY IN DEVELOPMENT...)
+- **Email**: Gmail account with App-Password enabled  
 
 ---
 
@@ -52,15 +52,8 @@ A cross-platform, context-aware keylogger and alerting system for school-wide de
    - **Logoff** → point to a wrapper for `logoff_checker.py`  
 4. **Update GPO**: `gpupdate /force` and verify `keywatcher_phaseone.py` runs in Task Manager.
 
-### Chromebooks via Admin Console
+### Chromebooks via Admin Console (CURRENTLY IN DEVELOPMENT, COMING SOON...)
 
-1. **Create** extension folder with:  
-   - `manifest.json` (Manifest V3)  
-   - `content.js` (captures keystrokes, checks `KEYWORD_MAP`, sends `chrome.runtime.sendMessage`)  
-   - `background.js` (forwards hits to your Apps Script webhook).  
-2. **Zip** those three files.  
-3. In Google Admin → Devices → Chrome → Apps & extensions → **Users & browsers** (Students OU) → **Add** → **Add from Chrome Web Store** (or “Add custom app” with Web Store URL).  
-4. **Force install** the published/unlisted extension.  
 
 ---
 
