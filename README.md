@@ -17,7 +17,6 @@ A cross-platform, context-aware keylogger and alerting system for school-wide de
 - **Session persistence**: per-user buffer survives logoff/logon, auto-cleared on alert  
 - **Email alerts** via Gmail SMTP (includes user, hostname, timestamp, context)  
 - **Windows deployment**: GPO startup for `keylogger.py` + logoff sweep via `logoff_checker.py`  
-- **Chromebook coverage**: (CURRENTLY IN DEVELOPMENT, DOCUMENTATION WILL BE UPDATED SOON...)
 - **Privacy-first**: only the small context snippet is stored/emailed, all buffers auto-purged  
 
 ---
@@ -25,7 +24,6 @@ A cross-platform, context-aware keylogger and alerting system for school-wide de
 ## ⚙️ Requirements
 
 - **Windows clients**: Python 3.13.5+ installed (bundled with GPO wrapper), network access to SMTP  
-- **Chromebooks**: Google Admin console & scripts.google.com (CURRENTLY IN DEVELOPMENT...)
 - **Email**: Gmail account with App-Password enabled  
 
 ---
@@ -51,8 +49,6 @@ A cross-platform, context-aware keylogger and alerting system for school-wide de
    - **Logon** → point to `launch_keywatcher.bat`  
    - **Logoff** → point to a wrapper for `logoff_checker.py`  
 4. **Update GPO**: `gpupdate /force` and verify `keywatcher_phaseone.py` runs in Task Manager.
-
-### Chromebooks via Admin Console (CURRENTLY IN DEVELOPMENT, COMING SOON...)
 
 
 ---
