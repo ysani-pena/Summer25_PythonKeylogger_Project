@@ -1,6 +1,6 @@
 # Academy Keywatcher
 
-A cross-platform, context-aware keylogger and alerting system for school-wide deployment on Windows and Chromebooks.
+A cross-platform, context-aware keylogger and alerting system for school-wide deployment on Windows.
 
 ---
 
